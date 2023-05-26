@@ -1,0 +1,35 @@
+:root {
+  /* Used for texts (+ footer background) */
+  --color-granite: #252629;
+  /* Used for backgrounds (+ footer text color) */
+  --color-foam: #ffffff;
+  /* Used for buttons, icons, etc. */
+  --color-nemo: #ff4a11;
+  /* active color for buttons, icons, etc. */
+  --color-nemo-mid: #ff5c29;
+  /* hover color for buttons, icons, etc. */
+  --color-nemo-dark: #e5430f;
+  /* Used for borders and some backgrounds */
+  --color-water-10: #e4e8f0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: monospace;
+  color: var(--color-granite);
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  margin-top: 0px;
+  background-color: var(--color-water-10);
+}
+
+h1 {
+  text-align: center;
+  font-weight: lighter;
+}

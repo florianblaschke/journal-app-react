@@ -1,0 +1,35 @@
+h2 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 40vh;
+}
+
+input {
+  height: 12%;
+}
+label {
+  margin: 30px 0px 8px 0px;
+  font-size: larger;
+}
+
+textarea {
+  height: 55%;
+  resize: none;
+}
+button {
+  align-self: center;
+  margin: 35px 0px 50px 0px;
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
+  border-radius: 5px;
+  border: none;
+  width: 45vw;
+  height: 13vw;
+}

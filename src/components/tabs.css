@@ -1,0 +1,17 @@
+div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 36px;
+}
+
+.entries__count {
+  margin: 0px 20px 60px 0px;
+  font-weight: bolder;
+  color: var(--color-nemo);
+}
+
+.favorites__count {
+  margin: 0px 20px 60px 0px;
+  font-weight: bolder;
+}
