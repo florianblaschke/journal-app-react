@@ -1,3 +1,5 @@
+import "./heading.css";
+
 export function Header() {
   return (
     <header>
