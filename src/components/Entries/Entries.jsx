@@ -1,6 +1,6 @@
 import "./entries.css";
-import { ReactComponent as StarEmpty } from "./star";
-import { ReactComponent as StarFilled } from "./star-filled";
+import { StarEmpty } from "./Star";
+import { StarFilled } from "./StarFilled";
 import { useState } from "react";
 
 export function Entries() {
