@@ -23,7 +23,7 @@ textarea {
   height: 55%;
   resize: none;
 }
-button {
+.button__submit {
   align-self: center;
   margin: 35px 0px 50px 0px;
   background-color: var(--color-nemo);

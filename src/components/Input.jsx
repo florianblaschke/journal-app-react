@@ -10,7 +10,7 @@ export function Input() {
         <label htmlFor="notes">Notes</label>
         <textarea id="notes"></textarea>
       </form>
-      <button className="submit__button" type="submit">
+      <button className="button__submit" type="submit">
         Create
       </button>
     </>
