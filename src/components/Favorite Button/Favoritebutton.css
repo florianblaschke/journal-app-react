@@ -1,0 +1,10 @@
+/* svg {
+  position: absolute;
+  top: 58px;
+  right: 10px;
+} */
+
+.button__favorite {
+  background-color: black;
+  width: 100%;
+}

@@ -11,12 +11,6 @@ section {
   margin-top: 20px;
 }
 
-svg {
-  position: absolute;
-  top: 58px;
-  right: 10px;
-}
-
 p {
   align-self: center;
 }
