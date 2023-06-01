@@ -10,8 +10,9 @@ export function FavoriteButton() {
     setFavorite(!favorite);
   }
 
-  <button className="button__favorite" onClick={handleClick}>
-    <p>HEEEEELLLLOOOOOOOOOO</p>
-    {/* {favorite ? <StarFilled /> : <StarEmpty />} */}
-  </button>;
+  return (
+    <button className="button__favorite" onClick={handleClick}>
+      {favorite ? <StarFilled /> : <StarEmpty />}
+    </button>
+  );
 }
