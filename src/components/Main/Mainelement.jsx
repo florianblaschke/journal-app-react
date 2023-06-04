@@ -1,7 +1,7 @@
 import "./Mainelement.css";
-import { Input } from "./Input.jsx";
-import { Tabs } from "./Tabs.jsx";
-import { Entries } from "./Entries/Entries.jsx";
+import { Input } from "../Input/Input";
+import { Tabs } from "../Tabs/Tabs.jsx";
+import { Entries } from "../Entries/Entries.jsx";
 
 export function Main() {
   return (
