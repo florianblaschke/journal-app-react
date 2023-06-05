@@ -4,11 +4,26 @@ import { Tabs } from "../Tabs/Tabs.jsx";
 import { Entries } from "../Entries/Entries.jsx";
 import { Fragment } from "react";
 
-export function Main({ entries, onAddEntry, onToggleFavorite }) {
+export function Main({
+  entries,
+  onAddEntry,
+  onToggleFavorite,
+  showAllEntries,
+  showFavoriteEntries,
+  allCount,
+  favoriteCount,
+  filter,
+}) {
   return (
     <main>
       <Input onAddEntry={onAddEntry} />
-      <Tabs />
+      <Tabs
+        filter={filter}
+        showAllEntries={showAllEntries}
+        showFavoriteEntries={showFavoriteEntries}
+        allCount={allCount}
+        favoriteCount={favoriteCount}
+      />
       {entries.map((entry) => (
         <Fragment key={entry.id}>
           <Entries

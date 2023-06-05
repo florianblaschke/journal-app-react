@@ -8,10 +8,9 @@ div {
 .entries__count {
   margin: 0px 20px 60px 0px;
   font-weight: bolder;
-  color: var(--color-nemo);
+  cursor: pointer;
 }
 
-.favorites__count {
-  margin: 0px 20px 60px 0px;
-  font-weight: bolder;
+.entries {
+  color: var(--color-nemo);
 }
