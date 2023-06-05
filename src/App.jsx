@@ -45,10 +45,22 @@ function App() {
     setEntries([{ ...newEntry, id: uid(), date: date }, ...entries]);
   }
 
+  function handleToggleFavorite(id) {
+    setEntries(
+      entries.map((entry) =>
+        entry.id === id ? { ...entry, isFavorite: !entry.isFavorite } : entry
+      )
+    );
+  }
+
   return (
     <>
       <Header />
-      <Main entries={entries} onAddEntry={handleAddEntry} />
+      <Main
+        entries={entries}
+        onAddEntry={handleAddEntry}
+        onToggleFavorite={handleToggleFavorite}
+      />
       <Footer />
     </>
   );
