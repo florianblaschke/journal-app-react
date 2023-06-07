@@ -4,6 +4,7 @@ import { Main } from "./components/Main/Mainelement.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
 import { useState } from "react";
 import { uid } from "uid";
+import useLocalStorageState from "use-local-storage-state";
 
 const initialEntries = [
   {
@@ -36,7 +37,10 @@ const initialEntries = [
 ];
 
 function App() {
-  const [entries, setEntries] = useState(initialEntries);
+  const [entries, setEntries] = useLocalStorageState("entries", {
+    defaultValue: initialEntries,
+  });
+
   const [filter, setFilter] = useState("all");
   const favoriteEntries = entries.filter((entry) =>
     entry.isFavorite ? true : false
